@@ -1,0 +1,47 @@
+---
+title: "blog_setup"
+author: "David Segan"
+date: "2/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Attach 'blogdown'
+```{r, eval= FALSE}
+library(blogdown)
+```
+
+Install hugo
+```{r, eval= FALSE}
+
+# Install `hugo` using `blogdown`:
+blogdown::install_hugo()
+# Check the verson of hugo:
+blogdown::hugo_version()
+# Check for hugo updates:
+blogdown::update_hugo()
+
+```
+
+Create a website
+```{r, eval= FALSE}
+
+new_site(theme = "gcushen/hugo-academic",
+         sample = TRUE,
+         theme_example = TRUE,
+         empty_dirs = TRUE,
+         to_yaml = TRUE)
+
+```
+
+Serve site
+
+```{r, eval= FALSE}
+
+blogdown::serve_site()
+
+```
+
