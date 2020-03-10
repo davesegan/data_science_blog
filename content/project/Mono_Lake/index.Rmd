@@ -1,0 +1,157 @@
+---
+title: "Mono Lake Water Levels"
+author: "David Segan"
+date: "10/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+Visualization of Mono Lake water levels over time and the effect of diversions to meet the water demands of Los Angeles.
+
+```{r, include=FALSE}
+# ----------------
+# David Segan
+# ESM 206 Assignment 3 - Task 1
+# Mono Lake Levels
+# 10/20/19
+# --------------
+
+# --------------
+# Data sources: 
+# 1850-1912 from Stine, Scott (based on occasional observations and San Francisco precipitation). 
+# 1912-1979 from LADWP and USGS compilations. 
+# 1979-present from Los Angeles Aqueduct Daily Reports, and observations by the Mono Lake Committee. Compiled by the Mono Lake Committee.	
+# ----------------
+
+# ----------
+# Attach libraries
+# ---------
+
+library(tidyverse)
+library(janitor)
+library(tidyr)
+
+# ----------
+# Read in mono lake data
+# ---------
+
+mono_lake <- read_csv("Mono Lake Annual Levels.csv")
+
+# -----------
+# Explore dataset
+# -----------
+
+names(mono_lake)
+summary(mono_lake)
+
+# -----------------
+# Skip first 5 rows when reading in and tidy up data
+# ------------------
+
+mono_lake_2 <- read_csv("Mono Lake Annual Levels.csv", skip = 5)
+
+mono_lake_tidy <- mono_lake_2 %>% 
+  clean_names() %>% 
+  mutate(land_bridges = 6377) %>% 
+  mutate(brine_shrimp_decrease = 6360) %>% 
+  mutate(acute_impacts_shrimp_decrease = 6350)
+  
+
+# --------------
+# Graph mono lake water level over time using annotations to indicate key water levels and key historical events
+# --------------
+
+mono_lake_graph <- 
+  ggplot(mono_lake_tidy, 
+         aes(y = lake_level_feet_above_sea_level,
+             x = year)) +
+  geom_line(aes(y = lake_level_feet_above_sea_level, 
+                color = vertical_change), 
+            size = 2,
+            show.legend = FALSE) +
+  scale_color_gradientn(colors = c("red","lightblue","blue", "darkblue")) +
+  geom_line(aes(y = stable_level),
+            color = "black",
+            linetype = "dashed") +
+  annotate(geom = "text", 
+           x = 1900,
+           y = 6394,
+           label = "Stable water level",
+           size = 3.5) + 
+  geom_line(aes(y = land_bridges), 
+            color = "black",
+            linetype = "dashed") + 
+  geom_line(aes(y = brine_shrimp_decrease),
+            color = "black",
+            linetype = "dashed") +
+  annotate(geom = "text",
+           x = 1974,
+           y = 6425,
+           label = "Diversions begin (1941)",
+           size = 3.5) + 
+  annotate(geom = "curve",
+           x = 1953, xend = 1941,
+           y = 6425, yend = 6418,
+           arrow = arrow(length = unit(.1, "inches"))) + 
+  annotate(geom = "segment",
+           x = 1994, xend = 1994,
+           y = 6398, yend = 6379,
+           arrow = arrow(length = unit(.1,"inches"))) +
+  annotate(geom = "text",
+           x = 1993,
+           y = 6403,
+           label = 
+"CA water resources board
+orders rise to  
+stable level (1994)",
+           size = 3.5) +
+  annotate(geom = "text",
+           x = 1910,
+           y = 6379,
+           label = "Land bridges allow predators to access major bird nesting sites", size = 3.5) +
+  annotate(geom = "text",
+           x = 1900,
+           y = 6362,
+           label = "Bird food sources begin to decline", size = 3.5) +
+  annotate("rect", xmin = 1850, xmax = 2017,
+           ymin = 6360, ymax = 6377, 
+           alpha = .20, fill = "red") +
+  annotate("rect", xmin = 1850, xmax = 2017,
+           ymin = 6377, ymax = 6392, 
+           alpha = .10, fill = "red") +
+  annotate("rect", xmin = 1850, xmax = 2017,
+           ymin = 6355, ymax = 6360, 
+           alpha = .30, fill = "red") +
+  theme_light() + 
+  theme(panel.grid.minor.x = element_blank(), 
+        panel.grid.minor.y = element_blank(),
+        legend.position = c(.85, .75)) +
+  scale_x_continuous(expand = c(0, 0), 
+                     limits = c(1850, 2017), 
+                     breaks = seq(1850, 2017, by = 25)) +
+  scale_y_continuous(expand = c(0,0),
+                     limits = c(6355, 6430),
+                     breaks = seq(6360, 6430, by = 20)) +
+  labs(x = "Year of measurement (recorded on October 1st)", 
+       y = "Lake level (feet above sea level)",
+       title = "Mono lake levels from 1850 to 2017",
+       color = "Annaul change in
+water level (ft)")
+
+
+```
+
+
+```{r}
+mono_lake_graph
+```
+
+Data sources: 
+1850-1912 from Stine, Scott (based on occasional observations and San Francisco precipitation). 
+1912-1979 from LADWP and USGS compilations. 
+1979-present from Los Angeles Aqueduct Daily Reports, and observations by the Mono Lake Committee. Compiled by the Mono Lake Committee.	

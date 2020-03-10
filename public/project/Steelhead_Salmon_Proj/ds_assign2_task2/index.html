@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Segan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Introduction This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/project/steelhead_salmon_proj/ds_assign2_task2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#165F80">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/project/steelhead_salmon_proj/ds_assign2_task2/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="David Segan">
+  <meta property="og:url" content="/project/steelhead_salmon_proj/ds_assign2_task2/">
+  <meta property="og:title" content="Steelhead salmon passage counts at Bonneville Dam | David Segan">
+  <meta property="og:description" content="Introduction This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+    
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/project/steelhead_salmon_proj/ds_assign2_task2/"
+  },
+  "headline": "Steelhead salmon passage counts at Bonneville Dam",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "David Segan"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Segan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Introduction This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Steelhead salmon passage counts at Bonneville Dam | David Segan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Segan</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Segan</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Steelhead salmon passage counts at Bonneville Dam</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts.</p>
+<p>Reference: Columbia River DART, Columbia Basin Research, University of Washington. (2019). Adult Passage Graphics &amp; Text. Available from <a href="http://www.cbr.washington.edu/dart/query/adult_graph_text" class="uri">http://www.cbr.washington.edu/dart/query/adult_graph_text</a></p>
+<div class="figure">
+<img src="bonneville_dam.jpg" alt="Bonneville Dam spillway. Photo curtesy of the Bonneville Dam Wikipedia page, visitor7." />
+<p class="caption">Bonneville Dam spillway. Photo curtesy of the Bonneville Dam Wikipedia page, visitor7.</p>
+</div>
+</div>
+<div id="visualing-exploring-the-data" class="section level3">
+<h3>Visualing exploring the data</h3>
+<pre class="r"><code># -----------------
+# Install libraries
+# ------------------
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(paletteer)
+library(tsibble)
+
+# ----------------
+# Read in csv
+# ---------------
+
+steelhead &lt;- read_csv(&quot;cbr_fish_passage_bonneville_allyrs_steelhead.csv&quot;) %&gt;% 
+  clean_names()
+
+# Note on data classes: year is number &amp; mm_dd is character
+# Also mm_dd is mislabeled, it is actually dd_mm</code></pre>
+<pre class="r"><code># ---------------
+# Correct dates
+# ---------------
+
+steelhead_dates &lt;- steelhead %&gt;% 
+  # combine date columns using str_c
+  mutate(yr_day_mo = str_c(year, mm_dd, sep = &quot;-&quot;)) %&gt;% 
+  # convert to date format using parse_date_time
+  mutate(yr_mo_day = lubridate::parse_date_time(yr_day_mo, &quot;ydm&quot;)) %&gt;% 
+  # add month, day, &amp; year columns and remove unneccesary date columns
+  select(-mm_dd, -year, -yr_day_mo) %&gt;% 
+  mutate(month = month(yr_mo_day, label = TRUE)) %&gt;% 
+  mutate(day = day(yr_mo_day)) %&gt;% 
+  mutate(year = year(yr_mo_day))</code></pre>
+<pre class="r"><code># ------------
+# Timeseries plot
+# ------------
+
+steel_timeseries &lt;- steelhead_dates %&gt;% 
+  # remove all observations with NA for date or value
+  # note, value is the count of salmon that were recorded passing the damn
+  drop_na(yr_mo_day, value)
+
+steel_gg &lt;- ggplot(data = steel_timeseries,
+                   aes(x = yr_mo_day,
+                       y = value)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = &quot;Daily Dates&quot;,
+       y = &quot;Count of Steelhead Salmon&quot;,
+       title = &quot;Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Daily records from 1940-2018)&quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_gg</code></pre>
+<p><img src="/project/Steelhead_Salmon_Proj/ds_assign2_task2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<ul>
+<li>There was a large spike in steelhead salmon counts in August 2009.</li>
+</ul>
+<pre class="r"><code># -------------
+# Season plot
+# -------------
+
+steel_season &lt;- steel_timeseries %&gt;% 
+  # mutate(decade = round_date(year, unit = )) %&gt;% 
+  group_by(year, month) %&gt;% 
+  summarize(average_count = mean(value))
+
+steel_season_gg &lt;- ggplot(data = steel_season,
+                          aes(x = month,
+                              y = average_count,
+                              group = year)) +
+  geom_line(aes(color = year)) +
+  scale_color_paletteer_c(&quot;grDevices::SunsetDark&quot;) +
+  theme_minimal() +
+  labs(x = &quot;Month&quot;,
+       y = &quot;Average count of Steelhead Salmon&quot;,
+       title = &quot;Steelhead Salmon Passing Bonneville Dam
+       Average daily counts by month (1940-2019)&quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_season_gg</code></pre>
+<p><img src="/project/Steelhead_Salmon_Proj/ds_assign2_task2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<ul>
+<li>The largest amount of steelhead salmon pass through the Bonneville Dam in the summer months.</li>
+<li>The number of total salmon observed has increased overtime.</li>
+</ul>
+<pre class="r"><code># ------------
+# Annual steelhead passage counts
+# ------------
+
+steel_annual &lt;- steel_timeseries %&gt;% 
+  group_by(year) %&gt;% 
+  summarize(total_count = sum(value))
+
+steel_annual_gg &lt;- ggplot(data = steel_annual,
+                          aes(x = year,
+                              y = total_count)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Annual count of Steelhead Salmon&quot;,
+       title = &quot;Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Annual totals from 1940-2019)&quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_annual_gg</code></pre>
+<p><img src="/project/Steelhead_Salmon_Proj/ds_assign2_task2_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<ul>
+<li>Steelhead Salmon counts increased dramatically starting in 1980 with peaks in 2001 and 2009</li>
+<li>There has been an equally drastic drop in counts in the past decade</li>
+</ul>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/project/steelhead_salmon_proj/ds_assign2_task2/&amp;text=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/project/steelhead_salmon_proj/ds_assign2_task2/&amp;t=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam&amp;body=/project/steelhead_salmon_proj/ds_assign2_task2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/project/steelhead_salmon_proj/ds_assign2_task2/&amp;title=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam%20/project/steelhead_salmon_proj/ds_assign2_task2/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/project/steelhead_salmon_proj/ds_assign2_task2/&amp;title=Steelhead%20salmon%20passage%20counts%20at%20Bonneville%20Dam" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu3a5ea53e83c86bb6f6edb82f66ef4861_4221945_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">David Segan</a></h5>
+      <h6 class="card-subtitle">Graduate Student and Teaching Assistant</h6>
+      <p class="card-text">Student in Bren School of Environmental Science and Management</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/davesegan" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

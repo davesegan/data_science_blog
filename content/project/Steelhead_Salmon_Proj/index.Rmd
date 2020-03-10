@@ -1,0 +1,147 @@
+---
+title: "Steelhead salmon passage counts at Bonneville Dam"
+author: "David Segan"
+date: "2/18/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+### Introduction
+
+This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts.
+
+Reference: Columbia River DART, Columbia Basin Research, University of Washington. (2019). Adult Passage Graphics & Text. Available from http://www.cbr.washington.edu/dart/query/adult_graph_text
+
+![Bonneville Dam spillway. Photo curtesy of the Bonneville Dam Wikipedia page, visitor7. ](bonneville_dam.jpg)
+
+### Visualing exploring the data
+
+```{r}
+# -----------------
+# Install libraries
+# ------------------
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(paletteer)
+library(tsibble)
+
+# ----------------
+# Read in csv
+# ---------------
+
+steelhead <- read_csv("cbr_fish_passage_bonneville_allyrs_steelhead.csv") %>% 
+  clean_names()
+
+# Note on data classes: year is number & mm_dd is character
+# Also mm_dd is mislabeled, it is actually dd_mm
+```
+
+```{r}
+# ---------------
+# Correct dates
+# ---------------
+
+steelhead_dates <- steelhead %>% 
+  # combine date columns using str_c
+  mutate(yr_day_mo = str_c(year, mm_dd, sep = "-")) %>% 
+  # convert to date format using parse_date_time
+  mutate(yr_mo_day = lubridate::parse_date_time(yr_day_mo, "ydm")) %>% 
+  # add month, day, & year columns and remove unneccesary date columns
+  select(-mm_dd, -year, -yr_day_mo) %>% 
+  mutate(month = month(yr_mo_day, label = TRUE)) %>% 
+  mutate(day = day(yr_mo_day)) %>% 
+  mutate(year = year(yr_mo_day))
+  
+  
+```
+
+```{r}
+# ------------
+# Timeseries plot
+# ------------
+
+steel_timeseries <- steelhead_dates %>% 
+  # remove all observations with NA for date or value
+  # note, value is the count of salmon that were recorded passing the damn
+  drop_na(yr_mo_day, value)
+
+steel_gg <- ggplot(data = steel_timeseries,
+                   aes(x = yr_mo_day,
+                       y = value)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = "Daily Dates",
+       y = "Count of Steelhead Salmon",
+       title = "Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Daily records from 1940-2018)") +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_gg
+```
+
+- There was a large spike in steelhead salmon counts in August 2009.
+
+```{r}
+# -------------
+# Season plot
+# -------------
+
+steel_season <- steel_timeseries %>% 
+  # mutate(decade = round_date(year, unit = )) %>% 
+  group_by(year, month) %>% 
+  summarize(average_count = mean(value))
+
+steel_season_gg <- ggplot(data = steel_season,
+                          aes(x = month,
+                              y = average_count,
+                              group = year)) +
+  geom_line(aes(color = year)) +
+  scale_color_paletteer_c("grDevices::SunsetDark") +
+  theme_minimal() +
+  labs(x = "Month",
+       y = "Average count of Steelhead Salmon",
+       title = "Steelhead Salmon Passing Bonneville Dam
+       Average daily counts by month (1940-2019)") +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_season_gg
+
+```
+
+- The largest amount of steelhead salmon pass through the Bonneville Dam in the summer months.
+- The number of total salmon observed has increased overtime.
+```{r}
+# ------------
+# Annual steelhead passage counts
+# ------------
+
+steel_annual <- steel_timeseries %>% 
+  group_by(year) %>% 
+  summarize(total_count = sum(value))
+
+steel_annual_gg <- ggplot(data = steel_annual,
+                          aes(x = year,
+                              y = total_count)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = "Year",
+       y = "Annual count of Steelhead Salmon",
+       title = "Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Annual totals from 1940-2019)") +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_annual_gg
+```
+ 
+ - Steelhead Salmon counts increased dramatically starting in 1980 with peaks in 2001 and 2009
+ - There has been an equally drastic drop in counts in the past decade
+

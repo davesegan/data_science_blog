@@ -1,48 +1,43 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: Student in Bren School of Environmental Science and Management
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+  - course: Master of Environmental Science and Management
+    institution: University of California, Santa Barbara
+    year: 2021
+  - course: Bachelor of Arts in Economics
+    institution: George Washington University
+    year: 2014
+email: "davesegan@gmail.com"
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Nelson Bighetti
+- Energy Efficiency
+- Renewable Energy
+- Sustainable Transportation
+name: David Segan
 organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+- name: Bren School of Environmental Management - University of California, Santa Barbara
+  url: "https://www.bren.ucsb.edu/"
+role: Graduate Student and Teaching Assistant
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: twitter
+- icon: 
+  icon_pack: 
+  link:
+- icon: 
+  icon_pack:
+  link:
+  icon: github
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/davesegan
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+David is committed to helping communities and organizations decarbonize and meet their sustainability goals. His focus is on scaling energy efficiency, renewable energy, and sustainable transportation. He utilizes skills in data analysis, research, collaboration, and project management to find and implement solutions. David is currently specializing in energy and climate at the Bren School of Environmental Science and Management to gain a better understanding of the science behind global warming and the practical solutions at our disposal. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

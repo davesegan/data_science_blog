@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Academic</title>
+    <title>Projects | David Segan</title>
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Projects</title>
@@ -13,23 +13,435 @@
     </image>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
-      <description></description>
+      <title>Analysis of Pacific Giant Salamanders in Mack Creek, OR</title>
+      <link>/project/pacfic_giant_salamanders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/pacfic_giant_salamanders/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Nestled alongside Oregon’s McKenzie River lies Mack Creek, a forest-dense aquatic area that provides habitat for the Pacific Giant Salamander. The density of forest alongside Mack Creek varies greatly between different forest sections due to historic forest clear-cutting. It is not fully understood whether the clear-cutting of forest has had a significant impact on the Pacific Giant Salamander population in Mack Creek. Fortunately, for the purposes of this report, the Pacific Giant Salamander population along Mack Creek has been monitored in both a clear-cut forest section and a 500-year-old, old-growth forest section since 1993 (Gregory S. V. 2016). Data from this monitoring of Pacific Giant Salamanders includes the specific location of individual observations, overall counts, and individual weights (Gregory S. V. 2016). Here, we analyze this data to provide insight into the the effect that forest clear-cutting has on Pacific Giant Salamander populations in Mack Creek.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;Mack_Creek_Map.png&#34; alt=&#34;Mack Creek Location. Dana Warren.&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Mack Creek Location. Dana Warren.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;pacific_giant_sal.PNG&#34; alt=&#34;Pacific Giant Salamander. Photo by Karl H. Switak&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Pacific Giant Salamander. Photo by Karl H. Switak&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-and-methods&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Data and Methods&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Annually collected data on the Pacific giant salamanders from 1993 to 2017 in the old growth section and the previously clear-cut section of the Andrews Experimental Forest was used for the analysis. Among these two groups, counts, weights, and location of salamanders within the Mack Creek channel (pool, cascade, or side-channel) were analyzed using a significance level of 0.05. For more information on collection methods and variables, see &lt;a href=&#34;https://portal.edirepository.org/nis/metadataviewer?packageid=knb-lter-and.4027.12&#34;&gt;metadata&lt;/a&gt;. A chi-squared test was used to determine if there is a significant effect of forest condition (old growth vs clear cut) on where in the channel Pacific Giant Salamander’s are found (Cascades, Side-Channel, and Pool). A two-sample t-test was used to compare the weights of Pacific Giant Salamanders between the two forest sections. Lastly, a one-way ANOVA test, along with Tukey’s HSD and Cohen’s D for post-hoc testing was conducted to compare mean weights across channel locations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/h3&gt;
+&lt;div id=&#34;part-a-visual-comparison-of-salamander-counts&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;strong&gt;Part A:&lt;/strong&gt; Visual Comparison of Salamander Counts&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Pacfic_Giant_Salamanders/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;strong&gt;Figure 1&lt;/strong&gt;: &lt;em&gt;Counts of Pacific Giant Salamander’s compared between clear-cut forest section and old-growth forest section between 1993 and 2017.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Trends in Giant Pacific Salamander counts were compared between clear-cut and old-growth forest sections between 1993 and 2017 (Figure 1). Noticeably, there is little visual difference in the fluctuation of salamander counts in old-growth and clear-cut forest sections. Despite little difference in the fluctuation of salamander counts, on average, salamander counts in old-growth forest sections were greater until 2014. Populations of Giant Pacific Salamanders in both the clear-cut and old-growth forest sections experienced significant decline in populations between 2013 and 2015.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results-b-2017-salamander-counts-by-channel-classification&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;strong&gt;Results B:&lt;/strong&gt; 2017 Salamander Counts by Channel Classification&lt;/h4&gt;
+&lt;strong&gt;Table 1:&lt;/strong&gt; &lt;em&gt;2017 Salamander counts by channel classification (pool, cascades, and side-channel) in old-growth and clear-cut sections of Mack Creek. Proportions provide insight into the relationship that exists between forest section and the channel section where Pacific Giant Salamanders were observed.&lt;/em&gt;
+&lt;table class=&#34;table table-striped&#34; style=&#34;width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Section
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Cascades
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Pool
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Side Channel
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Clear Cut
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+247 (67.1%)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+31 (8.4%)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+90 (24.5%)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Old Growth
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+201 (62.8%)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+45 (14.1%)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+74 (23.1%)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results-c-analysis-of-salamander-counts-by-channel-classification&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;strong&gt;Results C:&lt;/strong&gt; Analysis of Salamander Counts by Channel Classification&lt;/h4&gt;
+&lt;p&gt;A chi-squared test of independence was conducted to analyze whether there is a significant effect of forest condition on the channel classification where Pacific Giant Salamanders were observed. The analysis shows that, at a 95% confidence level, there is not a significant effect of forest section on where Pacific Giant Salamanders were observed (&lt;em&gt;p-value&lt;/em&gt;: 0.0626). Despite unequal distribution of salamander counts across forest sections (as seen in Table 1), there is not a statistically significant relationship that exists between forest section and channel classification at the 95% confidence level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results-d-pacific-giant-salamander-weights-by-section&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;strong&gt;Results D:&lt;/strong&gt; Pacific Giant Salamander Weights by Section&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Pacfic_Giant_Salamanders/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;strong&gt;Figure 2&lt;/strong&gt;: &lt;em&gt;Comparison of weights of Pacific Giant Salamanders observed in clear-cut forest section and old-growth forest section. Mean weight is displayed as black dot with error bars that display one standard deviation from mean. Mean weight of Pacific Giant Salamanders in clear-cut forest sections = 7.78g, and old-growth forest section = 6.58g.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A Welch’s two sample t-test was conducted to analyze whether there is a significant difference in mean weight of Pacific Giant Salamanders in clear-cut and old-growth forest sections. Test results show that, at a 95% confidence level, there is not a significant difference in the mean weight of Pacific Giant Salamanders between the two forest sections (&lt;em&gt;p-value:&lt;/em&gt; 0.096). These results reinforce findings in Results A, Results B, and Results C, that indicate that there is no significant effect of forest section on Pacific Giant Salamander populations in Mack Creek.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results-e-means-comparison-of-salamander-weight-by-channel-classification&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;strong&gt;Results E:&lt;/strong&gt; Means Comparison of Salamander Weight by Channel Classification&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Pacfic_Giant_Salamanders/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;strong&gt;Figure 3:&lt;/strong&gt; &lt;em&gt;Comparison of weights of Pacific Giant Salamanders observed in Cascades, Pools, or Side Channels.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Pacfic_Giant_Salamanders/index_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;strong&gt;Figure 4:&lt;/strong&gt; &lt;em&gt;QQ plot to explore normalcy of data spread for weights of Pacific Giant Salamanders observed in different channel classifications (Cascades, Pool, Side-Channel). Actual values of observations were plotted with theoretical normal values and yielded slightly abnormal results.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;levenes-test-for-equal-variance&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Levene’s Test for Equal Variance&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Levene’s Test Result: With a p-value of 0.093, this is not significant and we retain the null hypothesis of equal variances.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;one-way-anova-post-hoc-testing&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;One-way ANOVA &amp;amp; Post-Hoc Testing:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;ANOVA Result: Mean salamander weight (g) differed significantly between the three channel classifications (pool, cascade, side-channel) based on a one-way ANOVA test (F(2, 684) = 4.22, &lt;em&gt;p-value&lt;/em&gt; = 0.015).&lt;/li&gt;
+&lt;li&gt;Tukey’s HSD Result: Pairwise testing reveals that mean weights of Pool salamanders differ significantly from Side Channel salamanders (&lt;em&gt;p-value&lt;/em&gt; = 0.017), however, means of other pairwise combinations do not differ significantly. Pool salamanders and Cascade salamanders: (&lt;em&gt;p-value&lt;/em&gt; = 0.286). Side channel salamanders and Cascade salamanders: (&lt;em&gt;p-value&lt;/em&gt; = 0.084)&lt;/li&gt;
+&lt;li&gt;Effect size: Even though a significant difference in means is found between salamanders sampled in pools vs. side-channels, the effect size is small as tested with Cohen’s d: (&lt;em&gt;d estimate&lt;/em&gt; = 0.35)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analysis-of-results&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Analysis of Results&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;An Anova test was conducted to compare mean weights of salamanders across channel classifications, regardless of forest section. The results show that at the 95% confidence level, mean salamander weight was only significantly different between salamanders in side channels vs those in pools. While significantly different, the effect size is small, thus leading a conclusion that there is not considerable difference in Pacific Giant Salamander weight across channel classifications.&lt;/li&gt;
+&lt;li&gt;Prior to conducting the ANOVA, a QQ plot was created to evaluate normalcy of the weight distributions. The QQ plot revealed that the distributions of weights within each channel type is slightly abnormal. While this raises slight concern for the effectiveness of an ANOVA, it is widely accepted that an ANOVA is robust to violation of the normality assumption. Coupled with a Levene’s test that indicates non-significant difference in variance, the results of the ANOVA test are still valuable. Median weights should be compared for further analysis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pacific Giant Salamander counts have fluctuated greatly in Mack Creek from 1993 to 2018. These fluctuations have largely been the same in the previously clear cut section of the forest as in the old growth section of forest (Figure 1).&lt;/li&gt;
+&lt;li&gt;In 2017, mean weight of Pacfic Giant Salamanders sampled in clear-cut forests were 1.2 grams larger (~18% larger) than those sampled in old growth forest sections.(Figure 2)&lt;/li&gt;
+&lt;li&gt;Despite differences in actual data, statistical tests show inconclusive evidence that any strong relationships exist at the 95% confidence level between 1) forest section and where the Pacific Giant Salamander are found, 2) weights of the salamanders across forest sections, and 3) weights of the salamanders across channel classifications. (Results B, C, D, &amp;amp; E)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Gregory S. V. 2016. Aquatic Vertebrate Population Study in Mack Creek, Andrews Experimental Forest, 1987 to present. Environmental Data Initiative. &lt;a href=&#34;https://doi.org/10.6073/pasta/5de64af9c11579266ef20da2ff32f702&#34; class=&#34;uri&#34;&gt;https://doi.org/10.6073/pasta/5de64af9c11579266ef20da2ff32f702&lt;/a&gt;. Dataset accessed 12/01/2019&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>Effect of Marine Protected Area Designation on Spiny Lobster Populations</title>
+      <link>/project/spiny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/spiny/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In 2012, the California Fish and Game Network of Marine Protected Areas (MPA) established two MPAs along the Santa Barbara coastline, one in Isla Vista and another in Naples (Reed 2019). Like much of the Santa Barbara coastline, Isla Vista and Naples are home to the spiny lobster. The spiny lobster serves as an important predator in kelp forests off the California coastline (Reed 2019). Since 2012, the Santa Barbara Coastal Long-Term Ecological Research program (SBC LTER) has collected annual data on the size and abundance of spiny lobsters from five sites along the Santa Barbara coastline (Reed 2019). The SBC LTER data is collected from the two MPA sites mentioned above and three non-MPA sites along the Santa Barbara coastline, Mohawk, Arroyo Quemado, and Carpinteria. A comparison of the size and abundance of spiny lobsters between these five sites provides useful insight into the impact that MPAs have spiny lobster populations. This report uses the SBC LTER data to analyze the effect that MPAs have had on the size and abundance of spiny lobsters along the Santa Barbara coastline between 2012 and 2018.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;California_Spiny_Lobster-728x420.jpg&#34; alt=&#34;California Spiny Lobsters offshore of Anacapa Island. Photo by Ed Bierman&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;California Spiny Lobsters offshore of Anacapa Island. Photo by Ed Bierman&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-and-methods&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Data and Methods&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Data used for this study includes: 1) spiny lobster counts within designated transects at each site measured annually in late summer before the fishing season, and 2) the visually estimated sizes of these lobsters. Visualizations and statistics were used to identify interesting trends of these variables. Two sided T-tests were conducted to measure the significance of differences in mean lobster sizes and counts between Marine Protected Areas and non-Marine Protected Areas and also between 2012 and 2018 for each of those two groups. These tests were conducted at a 5% signficance level. Software used for this analysis includes R-Studio Version 1.2.1335 and GitHub.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/h3&gt;
+&lt;div id=&#34;a.-spiny-lobster-counts&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;A. Spiny Lobster Counts&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/project/Spiny/index_files/figure-html/unnamed-chunk-3-1.png&#34; alt=&#34;**Figure 1**: *Annual change in spiny lobster population between the five Santa Barbara coastline data collection sites (Isla Vista, Naples, Carpinteria, Mohawk, and Arroyo Quemado) from 2012 to 2018. MPA sites are delineated with red lines and non-MPA sites are delineated with blue lines*.&#34; width=&#34;576&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: &lt;strong&gt;Figure 1&lt;/strong&gt;: &lt;em&gt;Annual change in spiny lobster population between the five Santa Barbara coastline data collection sites (Isla Vista, Naples, Carpinteria, Mohawk, and Arroyo Quemado) from 2012 to 2018. MPA sites are delineated with red lines and non-MPA sites are delineated with blue lines&lt;/em&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interesting-trends&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Interesting trends:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Isla Vista has seen the largest increase in spiny lobster count by far among the five locations analyzed&lt;/li&gt;
+&lt;li&gt;Populations increased by well over 100% in Isla Vista and Carpenteria from 2016 - 2017&lt;/li&gt;
+&lt;li&gt;Marine Protected Areas showed gradual increase in lobster counts following their protection status in January, 2012 but this did not persist for Naples&lt;/li&gt;
+&lt;li&gt;Carpinteria (Non-MPA) and Isla Vista (MPA) were on similar trajectories between 2016 and 2017. Carpentiria, which is a non-MPA saw a major decline between 2017 and 2018, whereas Isla Vista, which is an MPA, did not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;div id=&#34;b.-size-distribution-comparison&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;B. Size Distribution Comparison&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/project/Spiny/index_files/figure-html/unnamed-chunk-4-1.png&#34; alt=&#34;**Figure 2**: *Spread of lobster sizes for each of the five Santa Barbara coastline sites for the years 2012 and 2018. Red colors are for Marine Protected Area sites while blue colors are for non-Marine Protected Area Sites. Change in median size from 2012-2018 for MPA was +13.5 mm while change in median size for non-MPA was -2 mm. Data: Santa Barbara Coastal Long-Term Ecological Research program*&#34; width=&#34;576&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: &lt;strong&gt;Figure 2&lt;/strong&gt;: &lt;em&gt;Spread of lobster sizes for each of the five Santa Barbara coastline sites for the years 2012 and 2018. Red colors are for Marine Protected Area sites while blue colors are for non-Marine Protected Area Sites. Change in median size from 2012-2018 for MPA was +13.5 mm while change in median size for non-MPA was -2 mm. Data: Santa Barbara Coastal Long-Term Ecological Research program&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interesting-trends-1&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Interesting trends:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Marine Protected Areas (Naples and Isla Vista) saw very clear increases in median sizes from 2012 to 2018&lt;/li&gt;
+&lt;li&gt;The spread of sizes noticibly decreased for Naples, Mohawk, and Carpenteria from 2012 - 2018, while it did not change at Arroyo Quemado and it increased at Isla Vista.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;div id=&#34;c.-comparison-of-mean-lobster-sizes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;C. Comparison of Mean Lobster Sizes&lt;/h4&gt;
+&lt;div id=&#34;mpa-vs.non-mpa-in-2012-question-1&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;em&gt;MPA vs. non-MPA in 2012 (Question 1):&lt;/em&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean lobster size differed significantly between MPA and non-MPA sites in 2012 (t(42.09) = -3.25, &lt;em&gt;p&lt;/em&gt; = 2.26e-03.&lt;/li&gt;
+&lt;li&gt;Mean for MPA in 2012 = 67.375 &lt;span class=&#34;math inline&#34;&gt;\(\pm\)&lt;/span&gt; 12.1542506&lt;/li&gt;
+&lt;li&gt;Mean for non-MPA in 2012 = 74.9246231 &lt;span class=&#34;math inline&#34;&gt;\(\pm\)&lt;/span&gt; 12.4141231&lt;/li&gt;
+&lt;li&gt;Actual difference in mean size: -7.55 mm&lt;/li&gt;
+&lt;li&gt;Confidence Interval: 95%&lt;/li&gt;
+&lt;li&gt;Effect Size using Cohen’s D: -0.61&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mpa-vs.non-mpa-in-2018-question-2&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;em&gt;MPA vs. non-MPA in 2018 (Question 2):&lt;/em&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean lobster size differed significantly between MPA and non-MPA sites in 2018 (t(1239.51) = 7.31, &lt;em&gt;p&lt;/em&gt; = 4.88e-13.&lt;/li&gt;
+&lt;li&gt;Mean for MPA in 2018 = 77.5667203 &lt;span class=&#34;math inline&#34;&gt;\(\pm\)&lt;/span&gt; 11.7034098&lt;/li&gt;
+&lt;li&gt;Mean for non-MPA in 2018 = 73.6199643 &lt;span class=&#34;math inline&#34;&gt;\(\pm\)&lt;/span&gt; 10.0943775&lt;/li&gt;
+&lt;li&gt;Actual difference in mean size: 3.95 mm&lt;/li&gt;
+&lt;li&gt;Confidence Interval: 95%&lt;/li&gt;
+&lt;li&gt;Effect Size using Cohen’s D: 0.35&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- round(((mean_MPA_2018) - (mean_nonMPA_2018))/(sqrt((sd_MPA_2018)^2 + (sd_nonMPA_2018)^2)/2),2)` --&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vs.2018-for-mpas-only-question-3&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;em&gt;2012 vs. 2018 for MPAs only (Question 3):&lt;/em&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean lobster size differed significantly between 2018 and 2012 for MPA sites (t(32.5) = -4.69, &lt;em&gt;p&lt;/em&gt; = 4.76e-05.&lt;/li&gt;
+&lt;li&gt;Actual difference in mean size: 10.19 mm&lt;/li&gt;
+&lt;li&gt;% change from 2012 to 2018: +15%&lt;/li&gt;
+&lt;li&gt;Confidence Interval: 95%&lt;/li&gt;
+&lt;li&gt;Effect Size using Cohen’s D: 0.87&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vs.2018-for-non-mpas-only-question-4&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;em&gt;2012 vs. 2018 for non-MPAs only (Question 4):&lt;/em&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean lobster size did &lt;em&gt;not&lt;/em&gt; differ significantly between 2018 and 2012 for non-MPA sites (t(296.01) = 1.33, &lt;em&gt;p&lt;/em&gt; = 0.1831.&lt;/li&gt;
+&lt;li&gt;Actual difference in mean size: -1.3 mm&lt;/li&gt;
+&lt;li&gt;% change from 2012 to 2018: -2%&lt;/li&gt;
+&lt;li&gt;Confidence Interval: 95%&lt;/li&gt;
+&lt;li&gt;Effect Size using Cohen’s D: -0.12&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:auto;&#34; class=&#34;datatables html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;caption&#34;:&#34;&lt;caption&gt;Table 1. Comparison of MPA and non-MPA spiny lobster sample statistics&lt;\/caption&gt;&#34;,&#34;data&#34;:[[&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;],[&#34;MPA&#34;,&#34;MPA&#34;,&#34;non-MPA&#34;,&#34;non-MPA&#34;],[2012,2018,2012,2018],[67.38,77.57,74.92,73.62],[64.5,78,75,73],[12.15,11.7,12.41,10.09],[32,1244,199,561]],&#34;container&#34;:&#34;&lt;table class=\&#34;display\&#34;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt; &lt;\/th&gt;\n      &lt;th&gt;site_status&lt;\/th&gt;\n      &lt;th&gt;year&lt;\/th&gt;\n      &lt;th&gt;mean&lt;\/th&gt;\n      &lt;th&gt;median&lt;\/th&gt;\n      &lt;th&gt;standard_deviation&lt;\/th&gt;\n      &lt;th&gt;sample_size&lt;\/th&gt;\n    &lt;\/tr&gt;\n  &lt;\/thead&gt;\n&lt;\/table&gt;&#34;,&#34;options&#34;:{&#34;columnDefs&#34;:[{&#34;className&#34;:&#34;dt-right&#34;,&#34;targets&#34;:[2,3,4,5,6]},{&#34;orderable&#34;:false,&#34;targets&#34;:0}],&#34;order&#34;:[],&#34;autoWidth&#34;:false,&#34;orderClasses&#34;:false,&#34;rowCallback&#34;:&#34;function(row, data) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({&#39;color&#39;:&#39;black&#39;});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({&#39;color&#39;:&#39;black&#39;});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({&#39;color&#39;:&#39;black&#39;});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({&#39;color&#39;:&#39;black&#39;});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({&#39;color&#39;:&#39;black&#39;});\n}&#34;}},&#34;evals&#34;:[&#34;options.rowCallback&#34;],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;/div&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;From 2012 to 2018, spiny lobster counts in MPA sites increased at a greater rate than spiny lobster counts in non-MPA sites (Figure 1).&lt;/li&gt;
+&lt;li&gt;From 2012 and 2018, the mean size of spiny lobsters increased by 15% for MPA sites whereas it decreased by 2% for non-MPA sites.&lt;/li&gt;
+&lt;li&gt;Between 2012 and 2018, mean spiny lobster sizes in the MPA sites went from being 7.55mm smaller than spiny lobsters in non-MPAs to being 3.95mm larger.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Reed D. 2019.&lt;/strong&gt; &lt;em&gt;SBC LTER: Reef: Abundance, size and fishing effort for California Spiny Lobster (Panulirus interruptus), ongoing since 2012. Environmental Data Initiative. &lt;a href=&#34;https://doi.org/10.6073/pasta/a593a675d644fdefb736750b291579a0&#34; class=&#34;uri&#34;&gt;https://doi.org/10.6073/pasta/a593a675d644fdefb736750b291579a0&lt;/a&gt;. Dataset accessed 11/15/2019.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mono Lake Water Levels</title>
+      <link>/project/mono_lake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/mono_lake/</guid>
+      <description>
+
+
+&lt;p&gt;Visualization of Mono Lake water levels over time and the effect of diversions to meet the water demands of Los Angeles.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Mono_Lake/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Data sources:
+1850-1912 from Stine, Scott (based on occasional observations and San Francisco precipitation).
+1912-1979 from LADWP and USGS compilations.
+1979-present from Los Angeles Aqueduct Daily Reports, and observations by the Mono Lake Committee. Compiled by the Mono Lake Committee.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steelhead salmon passage counts at Bonneville Dam</title>
+      <link>/project/steelhead_salmon_proj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/steelhead_salmon_proj/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This analysis looks at Steelhead salmon passage across the Bonneville Dam in Oregon from 1940 - 2019. The primary data collection is done byt the U.S. Army Corps of Engineers. The data includes counts of Steelhead Salmon recorded daily. There were days that did not include any salmon recordings and these data were removed from the analysis. Included in this analysis are a graph of daily recordings, a comparison of how seasonal recordings have changed over the years, and a graph of annual counts.&lt;/p&gt;
+&lt;p&gt;Reference: Columbia River DART, Columbia Basin Research, University of Washington. (2019). Adult Passage Graphics &amp;amp; Text. Available from &lt;a href=&#34;http://www.cbr.washington.edu/dart/query/adult_graph_text&#34; class=&#34;uri&#34;&gt;http://www.cbr.washington.edu/dart/query/adult_graph_text&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;bonneville_dam.jpg&#34; alt=&#34;Bonneville Dam spillway. Photo curtesy of the Bonneville Dam Wikipedia page, visitor7.&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Bonneville Dam spillway. Photo curtesy of the Bonneville Dam Wikipedia page, visitor7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualing-exploring-the-data&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualing exploring the data&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# -----------------
+# Install libraries
+# ------------------
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(paletteer)
+library(tsibble)
+
+# ----------------
+# Read in csv
+# ---------------
+
+steelhead &amp;lt;- read_csv(&amp;quot;cbr_fish_passage_bonneville_allyrs_steelhead.csv&amp;quot;) %&amp;gt;% 
+  clean_names()
+
+# Note on data classes: year is number &amp;amp; mm_dd is character
+# Also mm_dd is mislabeled, it is actually dd_mm&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ---------------
+# Correct dates
+# ---------------
+
+steelhead_dates &amp;lt;- steelhead %&amp;gt;% 
+  # combine date columns using str_c
+  mutate(yr_day_mo = str_c(year, mm_dd, sep = &amp;quot;-&amp;quot;)) %&amp;gt;% 
+  # convert to date format using parse_date_time
+  mutate(yr_mo_day = lubridate::parse_date_time(yr_day_mo, &amp;quot;ydm&amp;quot;)) %&amp;gt;% 
+  # add month, day, &amp;amp; year columns and remove unneccesary date columns
+  select(-mm_dd, -year, -yr_day_mo) %&amp;gt;% 
+  mutate(month = month(yr_mo_day, label = TRUE)) %&amp;gt;% 
+  mutate(day = day(yr_mo_day)) %&amp;gt;% 
+  mutate(year = year(yr_mo_day))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ------------
+# Timeseries plot
+# ------------
+
+steel_timeseries &amp;lt;- steelhead_dates %&amp;gt;% 
+  # remove all observations with NA for date or value
+  # note, value is the count of salmon that were recorded passing the damn
+  drop_na(yr_mo_day, value)
+
+steel_gg &amp;lt;- ggplot(data = steel_timeseries,
+                   aes(x = yr_mo_day,
+                       y = value)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = &amp;quot;Daily Dates&amp;quot;,
+       y = &amp;quot;Count of Steelhead Salmon&amp;quot;,
+       title = &amp;quot;Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Daily records from 1940-2018)&amp;quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Steelhead_Salmon_Proj/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There was a large spike in steelhead salmon counts in August 2009.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# -------------
+# Season plot
+# -------------
+
+steel_season &amp;lt;- steel_timeseries %&amp;gt;% 
+  # mutate(decade = round_date(year, unit = )) %&amp;gt;% 
+  group_by(year, month) %&amp;gt;% 
+  summarize(average_count = mean(value))
+
+steel_season_gg &amp;lt;- ggplot(data = steel_season,
+                          aes(x = month,
+                              y = average_count,
+                              group = year)) +
+  geom_line(aes(color = year)) +
+  scale_color_paletteer_c(&amp;quot;grDevices::SunsetDark&amp;quot;) +
+  theme_minimal() +
+  labs(x = &amp;quot;Month&amp;quot;,
+       y = &amp;quot;Average count of Steelhead Salmon&amp;quot;,
+       title = &amp;quot;Steelhead Salmon Passing Bonneville Dam
+       Average daily counts by month (1940-2019)&amp;quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_season_gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Steelhead_Salmon_Proj/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The largest amount of steelhead salmon pass through the Bonneville Dam in the summer months.&lt;/li&gt;
+&lt;li&gt;The number of total salmon observed has increased overtime.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ------------
+# Annual steelhead passage counts
+# ------------
+
+steel_annual &amp;lt;- steel_timeseries %&amp;gt;% 
+  group_by(year) %&amp;gt;% 
+  summarize(total_count = sum(value))
+
+steel_annual_gg &amp;lt;- ggplot(data = steel_annual,
+                          aes(x = year,
+                              y = total_count)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = &amp;quot;Year&amp;quot;,
+       y = &amp;quot;Annual count of Steelhead Salmon&amp;quot;,
+       title = &amp;quot;Counts of Steelhead Salmon Passing Bonneville Dam 
+       (Annual totals from 1940-2019)&amp;quot;) +
+  # center the title
+  theme(plot.title = element_text(hjust = 0.5)) 
+
+steel_annual_gg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/project/Steelhead_Salmon_Proj/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Steelhead Salmon counts increased dramatically starting in 1980 with peaks in 2001 and 2009&lt;/li&gt;
+&lt;li&gt;There has been an equally drastic drop in counts in the past decade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     

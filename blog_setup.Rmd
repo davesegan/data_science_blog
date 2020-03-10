@@ -7,6 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 Attach 'blogdown'
@@ -29,11 +30,11 @@ blogdown::update_hugo()
 Create a website
 ```{r, eval= FALSE}
 
-new_site(theme = "gcushen/hugo-academic",
-         sample = TRUE,
-         theme_example = TRUE,
-         empty_dirs = TRUE,
-         to_yaml = TRUE)
+# new_site(theme = "gcushen/hugo-academic",
+#          sample = TRUE,
+#          theme_example = TRUE,
+#          empty_dirs = TRUE,
+#          to_yaml = TRUE)
 
 ```
 
@@ -45,3 +46,4 @@ blogdown::serve_site()
 
 ```
 
+<iframe align = "center" width = "1000" height = "1000" src="https://public.tableau.com/profile/davesegan#!/vizhome/PublicBenchmarkingData/DCBenchmarking"/>

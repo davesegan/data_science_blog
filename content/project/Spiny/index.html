@@ -1,0 +1,136 @@
+---
+title: "Effect of Marine Protected Area Designation on Spiny Lobster Populations"
+author: "Richard Viebrock & David Segan"
+date: "11/15/2019"
+output: html_document
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<div id="introduction" class="section level3">
+<h3><strong>Introduction</strong></h3>
+<p>In 2012, the California Fish and Game Network of Marine Protected Areas (MPA) established two MPAs along the Santa Barbara coastline, one in Isla Vista and another in Naples (Reed 2019). Like much of the Santa Barbara coastline, Isla Vista and Naples are home to the spiny lobster. The spiny lobster serves as an important predator in kelp forests off the California coastline (Reed 2019). Since 2012, the Santa Barbara Coastal Long-Term Ecological Research program (SBC LTER) has collected annual data on the size and abundance of spiny lobsters from five sites along the Santa Barbara coastline (Reed 2019). The SBC LTER data is collected from the two MPA sites mentioned above and three non-MPA sites along the Santa Barbara coastline, Mohawk, Arroyo Quemado, and Carpinteria. A comparison of the size and abundance of spiny lobsters between these five sites provides useful insight into the impact that MPAs have spiny lobster populations. This report uses the SBC LTER data to analyze the effect that MPAs have had on the size and abundance of spiny lobsters along the Santa Barbara coastline between 2012 and 2018.</p>
+<div class="figure">
+<img src="California_Spiny_Lobster-728x420.jpg" alt="California Spiny Lobsters offshore of Anacapa Island. Photo by Ed Bierman" />
+<p class="caption">California Spiny Lobsters offshore of Anacapa Island. Photo by Ed Bierman</p>
+</div>
+</div>
+<div id="data-and-methods" class="section level3">
+<h3><strong>Data and Methods</strong></h3>
+<p>Data used for this study includes: 1) spiny lobster counts within designated transects at each site measured annually in late summer before the fishing season, and 2) the visually estimated sizes of these lobsters. Visualizations and statistics were used to identify interesting trends of these variables. Two sided T-tests were conducted to measure the significance of differences in mean lobster sizes and counts between Marine Protected Areas and non-Marine Protected Areas and also between 2012 and 2018 for each of those two groups. These tests were conducted at a 5% signficance level. Software used for this analysis includes R-Studio Version 1.2.1335 and GitHub.</p>
+</div>
+<div id="results" class="section level3">
+<h3><strong>Results</strong></h3>
+<div id="a.-spiny-lobster-counts" class="section level4">
+<h4>A. Spiny Lobster Counts</h4>
+<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<img src="/project/Spiny/index_files/figure-html/unnamed-chunk-3-1.png" alt="**Figure 1**: *Annual change in spiny lobster population between the five Santa Barbara coastline data collection sites (Isla Vista, Naples, Carpinteria, Mohawk, and Arroyo Quemado) from 2012 to 2018. MPA sites are delineated with red lines and non-MPA sites are delineated with blue lines*." width="576" />
+<p class="caption">
+Figure 1: <strong>Figure 1</strong>: <em>Annual change in spiny lobster population between the five Santa Barbara coastline data collection sites (Isla Vista, Naples, Carpinteria, Mohawk, and Arroyo Quemado) from 2012 to 2018. MPA sites are delineated with red lines and non-MPA sites are delineated with blue lines</em>.
+</p>
+</div>
+<div id="interesting-trends" class="section level5">
+<h5>Interesting trends:</h5>
+<ul>
+<li>Isla Vista has seen the largest increase in spiny lobster count by far among the five locations analyzed</li>
+<li>Populations increased by well over 100% in Isla Vista and Carpenteria from 2016 - 2017</li>
+<li>Marine Protected Areas showed gradual increase in lobster counts following their protection status in January, 2012 but this did not persist for Naples</li>
+<li>Carpinteria (Non-MPA) and Isla Vista (MPA) were on similar trajectories between 2016 and 2017. Carpentiria, which is a non-MPA saw a major decline between 2017 and 2018, whereas Isla Vista, which is an MPA, did not.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="section" class="section level3">
+<h3></h3>
+<div id="b.-size-distribution-comparison" class="section level4">
+<h4>B. Size Distribution Comparison</h4>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="/project/Spiny/index_files/figure-html/unnamed-chunk-4-1.png" alt="**Figure 2**: *Spread of lobster sizes for each of the five Santa Barbara coastline sites for the years 2012 and 2018. Red colors are for Marine Protected Area sites while blue colors are for non-Marine Protected Area Sites. Change in median size from 2012-2018 for MPA was +13.5 mm while change in median size for non-MPA was -2 mm. Data: Santa Barbara Coastal Long-Term Ecological Research program*" width="576" />
+<p class="caption">
+Figure 2: <strong>Figure 2</strong>: <em>Spread of lobster sizes for each of the five Santa Barbara coastline sites for the years 2012 and 2018. Red colors are for Marine Protected Area sites while blue colors are for non-Marine Protected Area Sites. Change in median size from 2012-2018 for MPA was +13.5 mm while change in median size for non-MPA was -2 mm. Data: Santa Barbara Coastal Long-Term Ecological Research program</em>
+</p>
+</div>
+<div id="interesting-trends-1" class="section level5">
+<h5>Interesting trends:</h5>
+<ul>
+<li>Marine Protected Areas (Naples and Isla Vista) saw very clear increases in median sizes from 2012 to 2018</li>
+<li>The spread of sizes noticibly decreased for Naples, Mohawk, and Carpenteria from 2012 - 2018, while it did not change at Arroyo Quemado and it increased at Isla Vista.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="section-1" class="section level3">
+<h3></h3>
+<div id="c.-comparison-of-mean-lobster-sizes" class="section level4">
+<h4>C. Comparison of Mean Lobster Sizes</h4>
+<div id="mpa-vs.non-mpa-in-2012-question-1" class="section level5">
+<h5><em>MPA vs. non-MPA in 2012 (Question 1):</em></h5>
+<ul>
+<li>Mean lobster size differed significantly between MPA and non-MPA sites in 2012 (t(42.09) = -3.25, <em>p</em> = 2.26e-03.</li>
+<li>Mean for MPA in 2012 = 67.375 <span class="math inline">\(\pm\)</span> 12.1542506</li>
+<li>Mean for non-MPA in 2012 = 74.9246231 <span class="math inline">\(\pm\)</span> 12.4141231</li>
+<li>Actual difference in mean size: -7.55 mm</li>
+<li>Confidence Interval: 95%</li>
+<li>Effect Size using Cohen’s D: -0.61</li>
+</ul>
+</div>
+<div id="mpa-vs.non-mpa-in-2018-question-2" class="section level5">
+<h5><em>MPA vs. non-MPA in 2018 (Question 2):</em></h5>
+<ul>
+<li>Mean lobster size differed significantly between MPA and non-MPA sites in 2018 (t(1239.51) = 7.31, <em>p</em> = 4.88e-13.</li>
+<li>Mean for MPA in 2018 = 77.5667203 <span class="math inline">\(\pm\)</span> 11.7034098</li>
+<li>Mean for non-MPA in 2018 = 73.6199643 <span class="math inline">\(\pm\)</span> 10.0943775</li>
+<li>Actual difference in mean size: 3.95 mm</li>
+<li>Confidence Interval: 95%</li>
+<li>Effect Size using Cohen’s D: 0.35</li>
+</ul>
+<!-- round(((mean_MPA_2018) - (mean_nonMPA_2018))/(sqrt((sd_MPA_2018)^2 + (sd_nonMPA_2018)^2)/2),2)` -->
+</div>
+<div id="vs.2018-for-mpas-only-question-3" class="section level5">
+<h5><em>2012 vs. 2018 for MPAs only (Question 3):</em></h5>
+<ul>
+<li>Mean lobster size differed significantly between 2018 and 2012 for MPA sites (t(32.5) = -4.69, <em>p</em> = 4.76e-05.</li>
+<li>Actual difference in mean size: 10.19 mm</li>
+<li>% change from 2012 to 2018: +15%</li>
+<li>Confidence Interval: 95%</li>
+<li>Effect Size using Cohen’s D: 0.87</li>
+</ul>
+</div>
+<div id="vs.2018-for-non-mpas-only-question-4" class="section level5">
+<h5><em>2012 vs. 2018 for non-MPAs only (Question 4):</em></h5>
+<ul>
+<li>Mean lobster size did <em>not</em> differ significantly between 2018 and 2012 for non-MPA sites (t(296.01) = 1.33, <em>p</em> = 0.1831.</li>
+<li>Actual difference in mean size: -1.3 mm</li>
+<li>% change from 2012 to 2018: -2%</li>
+<li>Confidence Interval: 95%</li>
+<li>Effect Size using Cohen’s D: -0.12</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="section-2" class="section level3">
+<h3></h3>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","caption":"<caption>Table 1. Comparison of MPA and non-MPA spiny lobster sample statistics<\/caption>","data":[["1","2","3","4"],["MPA","MPA","non-MPA","non-MPA"],[2012,2018,2012,2018],[67.38,77.57,74.92,73.62],[64.5,78,75,73],[12.15,11.7,12.41,10.09],[32,1244,199,561]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>site_status<\/th>\n      <th>year<\/th>\n      <th>mean<\/th>\n      <th>median<\/th>\n      <th>standard_deviation<\/th>\n      <th>sample_size<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'color':'black'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':'black'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'color':'black'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'color':'black'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'color':'black'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="summary" class="section level3">
+<h3>Summary</h3>
+<ul>
+<li>From 2012 to 2018, spiny lobster counts in MPA sites increased at a greater rate than spiny lobster counts in non-MPA sites (Figure 1).</li>
+<li>From 2012 and 2018, the mean size of spiny lobsters increased by 15% for MPA sites whereas it decreased by 2% for non-MPA sites.</li>
+<li>Between 2012 and 2018, mean spiny lobster sizes in the MPA sites went from being 7.55mm smaller than spiny lobsters in non-MPAs to being 3.95mm larger.</li>
+</ul>
+</div>
+<div id="references" class="section level3">
+<h3>References</h3>
+<p><strong>Reed D. 2019.</strong> <em>SBC LTER: Reef: Abundance, size and fishing effort for California Spiny Lobster (Panulirus interruptus), ongoing since 2012. Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/a593a675d644fdefb736750b291579a0" class="uri">https://doi.org/10.6073/pasta/a593a675d644fdefb736750b291579a0</a>. Dataset accessed 11/15/2019.</em></p>
+</div>
