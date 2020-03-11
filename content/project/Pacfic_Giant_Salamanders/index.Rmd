@@ -1,7 +1,7 @@
 ---
 title: 'Analysis of Pacific Giant Salamanders in Mack Creek, OR'
 author: "Richard Viebrock and David Segan"
-date: "11/27/2019"
+date: "2019-11-27"
 output: html_document
 ---
 
@@ -15,7 +15,7 @@ Nestled alongside Oregon's McKenzie River lies Mack Creek, a forest-dense aquati
 
 ![Mack Creek Location. Dana Warren.](Mack_Creek_Map.png)
 
-![Pacific Giant Salamander. Photo by Karl H. Switak](pacific_giant_sal.PNG)
+![Pacific Giant Salamander. Photo by Karl H. Switak](featured_pacific_giant_sal.PNG)
 
 ### **Data and Methods**
 
